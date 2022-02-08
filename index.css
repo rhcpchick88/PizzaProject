@@ -1,0 +1,25 @@
+a:link {
+    color:crimson;
+}
+
+a:visited {
+    color:blue;
+}
+
+a:hover {
+    color:chartreuse
+    ;
+}
+
+a:active {
+    text-shadow: 2px 2px;
+}
+
+span > img {
+    border-radius: 10px;
+}
+
+section p {
+    color:purple;
+    background-color: darkgrey;
+}
