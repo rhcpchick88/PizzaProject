@@ -23,3 +23,31 @@ section p {
     color:purple;
     background-color: darkgrey;
 }
+
+.pizza_grid {
+    display:inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding:10px;
+    margin:10px;
+    box-shadow: 10px black;
+}
+
+.item {
+    border-style:double;
+    border-radius:10px;
+    margin: 10px;
+    text-align: center;
+}
+
+
+.item > img {
+    max-height:100%;
+    max-width:100%;
+    width:33vw;
+    height:10vh;
+}
+
+.size {
+    display:inline-block;
+}
