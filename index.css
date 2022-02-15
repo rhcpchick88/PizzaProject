@@ -1,3 +1,7 @@
+a {
+    font-size:20px;
+}
+
 a:link {
     color:crimson;
 }
@@ -7,8 +11,21 @@ a:visited {
 }
 
 a:hover {
-    color:chartreuse
-    ;
+    color:chartreuse;
+}
+
+#animated:hover {
+    font-size:100px;
+    animation-name: animatedanimation; 
+    animation-duration: 10s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count:5;
+}
+
+@keyframes animatedanimation {
+    0% {20px}
+    50% {60px}
+    100% {70px}
 }
 
 a:active {
@@ -17,11 +34,27 @@ a:active {
 
 span > img {
     border-radius: 10px;
+    animation-name: imganimation;
+    animation-duration:5s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes imganimation {
+    0% {height:10px; font-size:0px;}
+    25% {height:50px; font-size: 8.5px;}
+    50% {height:100px; font-size: 17px;}
+
 }
 
 section p {
     color:purple;
-    background-color: darkgrey;
+    border:dotted;
+    border-color:black;
+    height:100px;
+    font-size:  17px;
+    animation-name: imganimation;
+    animation-duration: 10s;
+    animation-timing-function: ease-in;
 }
 
 .pizza_grid {
