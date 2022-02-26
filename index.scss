@@ -1,0 +1,116 @@
+$font-color:purple
+
+a {
+    font-size:20px;
+}
+
+a:link {
+    color:crimson;
+}
+
+a:visited {
+    color:blue;
+}
+
+a:hover {
+    color:chartreuse;
+}
+
+#animated:hover {
+    font-size:100px;
+    animation-name: animatedanimation; 
+    animation-duration: 10s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count:5;
+}
+
+a:active {
+    text-shadow: 2px 2px;
+}
+
+span > img {
+    border-radius: 10px;
+    animation-name: imganimation;
+    animation-duration:5s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes imganimation {
+    0% {height:10px; font-size:0px;}
+    25% {height:50px; font-size: 8.5px;}
+    50% {height:100px; font-size: 17px;}
+
+}
+
+section p {
+    display:inline-block;
+    color:$font-color;
+    height:100px;
+    font-size:  17px;
+    animation-name: imganimation;
+    animation-duration: 10s;
+    animation-timing-function: ease-in;
+}
+
+.pizza_grid {
+    display:inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding:10px;
+    margin:10px;
+    box-shadow: 10px black;
+}
+
+.item {
+    border-style:double;
+    border-radius:10px;
+    margin: 10px;
+    text-align: center;
+}
+
+
+.item > img {
+    max-height:100%;
+    max-width:100%;
+    width:33vw;
+    height:10vh;
+}
+
+.size {
+    display:inline-block;
+}
+
+
+
+@media only screen and (min-width:600px) {
+    
+    li {
+    display:block;
+    text-align:center;
+    }
+    
+    h1 {
+        text-align:center;
+    }
+
+    h2 {
+        text-align:center;
+    }
+
+    iframe {
+        width:100%;
+    }
+}
+
+@media only screen and (min-width:1000px) {
+span {
+    display:flex;
+    justify-content:center;
+}
+
+
+    img {
+        width: 400px;
+        margin:50px;
+    }
+}

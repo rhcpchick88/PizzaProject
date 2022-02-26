@@ -1,118 +1,147 @@
 a {
-    font-size:20px;
+  font-size: 20px;
 }
 
 a:link {
-    color:crimson;
+  color: crimson;
 }
 
 a:visited {
-    color:blue;
+  color: blue;
 }
 
 a:hover {
-    color:chartreuse;
+  color: chartreuse;
 }
 
 #animated:hover {
-    font-size:100px;
-    animation-name: animatedanimation; 
-    animation-duration: 10s;
-    animation-timing-function:ease-in-out;
-    animation-iteration-count:5;
-}
-
-@keyframes animatedanimation {
-    0% {20px}
-    50% {60px}
-    100% {70px}
+  font-size: 100px;
+  -webkit-animation-name: animatedanimation;
+          animation-name: animatedanimation;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 5;
+          animation-iteration-count: 5;
 }
 
 a:active {
-    text-shadow: 2px 2px;
+  text-shadow: 2px 2px;
 }
 
 span > img {
-    border-radius: 10px;
-    animation-name: imganimation;
-    animation-duration:5s;
-    animation-timing-function: ease-in;
+  border-radius: 10px;
+  -webkit-animation-name: imganimation;
+          animation-name: imganimation;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+@-webkit-keyframes imganimation {
+  0% {
+    height: 10px;
+    font-size: 0px;
+  }
+  25% {
+    height: 50px;
+    font-size: 8.5px;
+  }
+  50% {
+    height: 100px;
+    font-size: 17px;
+  }
 }
 
 @keyframes imganimation {
-    0% {height:10px; font-size:0px;}
-    25% {height:50px; font-size: 8.5px;}
-    50% {height:100px; font-size: 17px;}
-
+  0% {
+    height: 10px;
+    font-size: 0px;
+  }
+  25% {
+    height: 50px;
+    font-size: 8.5px;
+  }
+  50% {
+    height: 100px;
+    font-size: 17px;
+  }
 }
 
 section p {
-    display:inline-block;
-    color:purple;
-    height:100px;
-    font-size:  17px;
-    animation-name: imganimation;
-    animation-duration: 10s;
-    animation-timing-function: ease-in;
+  display: inline-block;
+  color: purple;
+  height: 100px;
+  font-size: 17px;
+  -webkit-animation-name: imganimation;
+          animation-name: imganimation;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
 }
 
 .pizza_grid {
-    display:inline-grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    padding:10px;
-    margin:10px;
-    box-shadow: 10px black;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  padding: 10px;
+  margin: 10px;
+  -webkit-box-shadow: 10px black;
+          box-shadow: 10px black;
 }
 
 .item {
-    border-style:double;
-    border-radius:10px;
-    margin: 10px;
-    text-align: center;
+  border-style: double;
+  border-radius: 10px;
+  margin: 10px;
+  text-align: center;
 }
 
-
 .item > img {
-    max-height:100%;
-    max-width:100%;
-    width:33vw;
-    height:10vh;
+  max-height: 100%;
+  max-width: 100%;
+  width: 33vw;
+  height: 10vh;
 }
 
 .size {
-    display:inline-block;
+  display: inline-block;
 }
 
-@media only screen and (min-width:600px) {
-    
-    li {
-    display:block;
-    text-align:center;
-    }
-    
-    h1 {
-        text-align:center;
-    }
-
-    h2 {
-        text-align:center;
-    }
-
-    iframe {
-        width:100%;
-    }
+@media only screen and (min-width: 600px) {
+  li {
+    display: block;
+    text-align: center;
+  }
+  h1 {
+    text-align: center;
+  }
+  h2 {
+    text-align: center;
+  }
+  iframe {
+    width: 100%;
+  }
 }
 
-@media only screen and (min-width:1000px) {
-span {
-    display:flex;
-    justify-content:center;
+@media only screen and (min-width: 1000px) {
+  span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  img {
+    width: 400px;
+    margin: 50px;
+  }
 }
-
-
-    img {
-        width: 400px;
-        margin:50px;
-    }
-}
+/*# sourceMappingURL=index.css.map */
