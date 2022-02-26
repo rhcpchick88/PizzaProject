@@ -47,9 +47,8 @@ span > img {
 }
 
 section p {
+    display:inline-block;
     color:purple;
-    border:dotted;
-    border-color:black;
     height:100px;
     font-size:  17px;
     animation-name: imganimation;
@@ -83,4 +82,37 @@ section p {
 
 .size {
     display:inline-block;
+}
+
+@media only screen and (min-width:600px) {
+    
+    li {
+    display:block;
+    text-align:center;
+    }
+    
+    h1 {
+        text-align:center;
+    }
+
+    h2 {
+        text-align:center;
+    }
+
+    iframe {
+        width:100%;
+    }
+}
+
+@media only screen and (min-width:1000px) {
+span {
+    display:flex;
+    justify-content:center;
+}
+
+
+    img {
+        width: 400px;
+        margin:50px;
+    }
 }
